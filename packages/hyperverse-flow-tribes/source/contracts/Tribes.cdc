@@ -112,6 +112,7 @@ pub contract Tribes {
     pub resource interface TenantPublic {
         pub fun getAllTribes(): {String: TribeData}
         pub fun getTribeData(tribeName: String): TribeData
+        pub fun getHello(): String
         access(contract) fun join(tribeName: String, user: Address)
         access(contract) fun leave(user: Address)
     }
@@ -119,6 +120,12 @@ pub contract Tribes {
     pub resource Tenant: TenantPublic {
         access(contract) var tribes: {String: TribeData}
         access(contract) var participants: {Address: String}
+
+        pub fun getHello(): String {
+            let name: String 
+            name = "Jordan"
+            return name
+        }
 
         //
         // To be called by the Tenant

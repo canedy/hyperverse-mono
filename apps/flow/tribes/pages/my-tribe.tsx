@@ -9,6 +9,8 @@ import Loader from '../components/Loader';
 import { useCallback } from 'react';
 import Image from 'next/image';
 
+import content from '../DB/content.json'
+
 const TribesPage = () => {
 	const router = useRouter();
 	const tribes = useTribes();
@@ -40,6 +42,8 @@ const TribesPage = () => {
 		}
 	}, [flow, getMyTribe]);
 
+
+
 	return (
 		<main>
 			<Nav />
@@ -54,29 +58,44 @@ const TribesPage = () => {
 							</div>
 						) : (
 							<Image
-								height={600}
-								width={480}
+								height={400}
+								width={400}
 								src={`https://ipfs.infura.io/ipfs/${currentTribe.ipfsHash}/`}
 								alt={currentTribe.name}
 								className="tribe"
 							/>
 						)}
 
-						<div>
+						<div className='styles.leftContent'>
 							<h1 className={styles.text}>{currentTribe.name}</h1>
 							<p className={styles.description}>{currentTribe.description}</p>
+							
+											
+							<br/><br/><br/>
+							<h1 className={styles.text}>Team Schedule</h1>
+							<br/><br/><br/>
+							
+							<ul>
+							{ currentTribe.name === 'Buckeye Bucks' ? content.Buckeye.map((data) =>  <li>{data.Date} {data.Location.home} @ {data.Location.away}</li> )	: 
+							currentTribe.name === 'Medina Bees' ? content.Medina.map((data) => <li>{data.Date} {data.Location.home} @ {data.Location.away}</li>  )	: 
+							currentTribe.name === 'Brunswick Blue Devils' ? content.Brunswick.map((data) =>  <li>{data.Date} {data.Location.home} @ {data.Location.away}</li> )	: 'No Schedule Available' }
+							</ul>
+							
 						</div>
+
 					</div>
+					
 					<button className={styles.join} onClick={() => leaveMyTribe()}>
-						Leave Tribe
+						Leave Oraganizaion
 					</button>
 				</div>
+
 			) : (
 				flow?.user &&
 				flow.user.addr && (
 					<div className={styles.container2}>
 						<button className={styles.join} onClick={() => router.push('/all-tribes')}>
-							Join a Tribe
+							Join a Organiation
 						</button>
 					</div>
 				)
@@ -89,6 +108,5 @@ const TribesPage = () => {
 			) : null}
 		</main>
 	);
-};
-
+}
 export default TribesPage;

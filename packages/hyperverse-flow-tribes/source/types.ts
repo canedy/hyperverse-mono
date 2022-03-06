@@ -4,6 +4,10 @@ export type Bind1<Fn extends (...args: any) => any> = (
 	...args: Tail<Parameters<Fn>>
 ) => ReturnType<Fn>;
 
+export type HelloData = {
+	name: string;
+};
+
 export type TribesData = {
 	name: string;
 	ipfsHash: string;

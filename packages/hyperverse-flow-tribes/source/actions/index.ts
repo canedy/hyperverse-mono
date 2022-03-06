@@ -4,3 +4,4 @@ export { joinTribe } from './joinTribe';
 export { getCurrentTribe } from './getCurrentTribe';
 export { createTenant } from './createTenant';
 export { addTribe } from './addTribe';
+export { getHello } from './getHello';

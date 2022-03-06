@@ -4,7 +4,7 @@ import { createContainer } from '@decentology/unstated-next';
 import * as actions from './actions';
 const fcl = require('@onflow/fcl');
 
-function TribesState(initialState: { tenantId: string } = { tenantId: '' }) {
+function HelloState(initialState: { tenantId: string } = { tenantId: '' }) {
 	const [isInitialized, setInitialized] = useState<boolean>(false);
 
 	let { network } = useHyperverse();
@@ -31,18 +31,12 @@ function TribesState(initialState: { tenantId: string } = { tenantId: '' }) {
 
 	return {
 		isInitialized,
-		leaveTribe: actions.leaveTribe.bind(null, tenantId),
-		getAllTribes: actions.getAllTribes.bind(null, tenantId),
-		getCurrentTribe: actions.getCurrentTribe.bind(null, tenantId),
-		joinTribe: actions.joinTribe.bind(null, tenantId),
-		createTenant: actions.createTenant,
-		addTribe: actions.addTribe,
 		getHello: actions.getHello,
 	};
 }
 
-export const FlowTribesContainer = createContainer(TribesState);
-export const Provider = FlowTribesContainer.Provider;
-export function useTribes() {
-	return FlowTribesContainer.useContainer();
+export const FlowHelloContainer = createContainer(HelloState);
+export const Provider = FlowHelloContainer.Provider;
+export function useHelloWorld() {
+	return FlowHelloContainer.useContainer();
 }

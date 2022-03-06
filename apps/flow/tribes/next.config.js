@@ -5,6 +5,7 @@ const withTM = require('next-transpile-modules')([
 	'@decentology/hyperverse',
 	'@decentology/hyperverse-flow',
 	'@decentology/hyperverse-flow-tribes',
+	'@decentology/hyperverse-flow-helloworld'
 ]);
 
 module.exports = withTM({

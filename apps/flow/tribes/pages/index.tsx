@@ -6,13 +6,17 @@ import styles from '../styles/Home.module.css';
 import Nav from '../components/Nav';
 import { useFlow } from '@decentology/hyperverse-flow';
 import { TribesData, useTribes } from '@decentology/hyperverse-flow-tribes';
+
 import { useCallback } from 'react';
 
 const Home: NextPage = () => {
 	const [currentTribe, setCurrentTribe] = useState<TribesData>();
+
 	const router = useRouter();
 	const tribes = useTribes();
+
 	const flow = useFlow();
+
 	const getUserTribe = useCallback(async () => {
 		if (flow?.user?.addr != null) {
 			setCurrentTribe(await tribes?.getCurrentTribe(flow.user.addr));
@@ -27,10 +31,10 @@ const Home: NextPage = () => {
 	return (
 		<div>
 			<Head>
-				<title>Tribes Sample Project</title>
+				<title>Volunteer Dapp</title>
 				<meta
 					name="description"
-					content="Sample project utilizing tribes module from hyperverse"
+					content="Volunteer Dapp utilizing tribes module from hyperverse"
 				/>
 			</Head>
 
@@ -38,10 +42,10 @@ const Home: NextPage = () => {
 				<Nav />
 				<div className={styles.hero}>
 					<div className={styles.header}>
-						<h1>Tribes</h1>
+						<h1>Volunteer Dapp</h1>
 						<p>
-							A sample DApp on the Hyperverse in which you can join and leave your
-							favorite Tribes.
+							Volunteer Dapp uses the Hyperverse in which you can join and leave your
+							favorite Tribes. With additional ability to display Team Schedule based on team selection
 						</p>
 						{flow?.loggedIn ? (
 							!currentTribe ? (
@@ -51,14 +55,14 @@ const Home: NextPage = () => {
 										router.push('/all-tribes');
 									}}
 								>
-									Join A Tribe
+									Volunteer Now
 								</button>
 							) : (
 								<button
 									className={styles.join}
 									onClick={() => router.push('/my-tribe')}
 								>
-									View Your Tribe
+									View Your Team
 								</button>
 							)
 						) : null}

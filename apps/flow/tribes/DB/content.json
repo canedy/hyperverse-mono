@@ -1,0 +1,38 @@
+{
+  "Buckeye": [
+    {
+      "Date": "Fri, Aug 20 @ 7:00 pm",
+      "Location": {"home": "Buckeye", "away": "Cloverleaf"}
+    },{
+      "Date": "Fri, Aug 27 @ 7:00 pm",
+      "Location": {"home": "Buckeye","away": "Conneaut"}
+    },{
+      "Date": "Fri, Sep 3 @ 7:00 pm",
+      "Location": {"home": "Medview","away": "Buckeye"}
+    }
+  ],
+  "Medina": [
+    {
+      "Date": "Fri, Aug 20 @ 7:00 pm",
+      "Location": {"home": "Medina", "away": "Stow"}
+    },{
+      "Date": "Fri, Aug 27 @ 7:00 pm",
+      "Location": {"home": "Brookside","away": "Medina"}
+    },{
+      "Date": "Fri, Sep 3 @ 7:00 pm",
+      "Location": {"home": "Medina","away": "Fairview"}
+    }
+  ],
+  "Brunswick": [
+    {
+      "Date": "Fri, Aug 20 @ 7:00 pm",
+      "Location": {"home": "Brunswick", "away": "Highland"}
+    },{
+      "Date": "Fri, Aug 27 @ 7:00 pm",
+      "Location": {"home": "Brunswick","away": "Shaker"}
+    },{
+      "Date": "Fri, Sep 3 @ 7:00 pm",
+      "Location": {"home": "Brunswick","away": "Cleveland Heights"}
+    }
+  ]
+}

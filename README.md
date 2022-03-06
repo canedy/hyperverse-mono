@@ -1,5 +1,7 @@
 # Preview
 
+Bruce
+
 # tribes-eth
 
 `tribes-eth` is a sample [Next.js](https://nextjs.org/) project utilizing the tribes module from the [hyperverse](https://www.decentology.com/hyperverse). The aim of this project is to allow users to join different tribes (or communities) and gain access to content only visible to those in that specific tribe.

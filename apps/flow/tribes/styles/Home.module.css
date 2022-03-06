@@ -5,6 +5,10 @@
   font-size: 2.5rem;
 }
 
+.leftContent {
+  margin-left: 300px;
+}
+
 .rightNav {
   display: flex;
   justify-content: center;
@@ -101,7 +105,7 @@
   text-transform: uppercase;
   font-size: 0.7rem;
   color: var(--color-theme-white);
-  width: 12.5rem;
+  width: 15rem;
   height: 2.2rem;
   background: rgb(180, 58, 58);
   background: linear-gradient(
@@ -220,7 +224,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 90%;
   height: 100%;
 }
 
@@ -233,9 +237,9 @@
 
 .tribeCard {
   margin: 2.5rem 4rem 0 0;
-  width: 200px;
+  width: 100px;
   height: 300px;
-  border: 2px solid var(--color-theme-white);
+  border: 2px solid var(--color-theme-blue);
   border-radius: 2rem;
   display: flex;
   align-items: center;
