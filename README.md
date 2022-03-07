@@ -1,8 +1,4 @@
-# Preview
-
-Bruce
-
-# tribes-Flow
+# Project Description
 
 We explored how to use the Hyperverse composable tooling that allows JavaScript developers to interact with the Blockchain easily. During our exploration, we had two primary goals. 
 
@@ -13,7 +9,19 @@ Volunteer Dapp will develop a fundraising application that will allow users to j
 
 # User Flow
 
-You will see the following site details once you follow the system installation requirements below. 
+In the application, you will have the following capabilities.
+
+- Ability to see all volunteering organizations
+- Ability to select the organization
+- See the schedule of all games associated with that organization.
+
+# User Flow Video
+
+Review [Walkthrough Video](https://www.canva.com/design/DAEwR7q3xVM/uYQze1heuKgIhBCIUB7lIg/view?utm_content=DAEwR7q3xVM&utm_campaign=designshare&utm_medium=link&utm_source=recording_view) demonstrating how the application works. 
+
+# Future Roadmap
+
+<img src="https://github.com/canedy/hyperverse-mono/blob/main/readme%20images/Roadmap.PNG?raw=true" alt="Project Roadmap"/>
 
 # 💻 System Requirements
 
@@ -50,7 +58,7 @@ To run this project locally:
 ## 🏁 Testing & Running the Application
 
 If you were successful following the Installation application, you should be greeted with the tribes home page that looks like this:
-<img src="./apps/ethereum/tribes/public/tribes-home.png" alt="tribes"/>
+<img src="https://github.com/canedy/hyperverse-mono/blob/main/readme%20images/index.PNG?raw=true" alt="Volunteer Dapp"/>
 
 ### Prerequisities
 

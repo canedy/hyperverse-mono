@@ -44,8 +44,7 @@ const Home: NextPage = () => {
 					<div className={styles.header}>
 						<h1>Volunteer Dapp</h1>
 						<p>
-							Volunteer Dapp uses the Hyperverse in which you can join and leave your
-							favorite Tribes. With additional ability to display Team Schedule based on team selection
+						Volunteer Dapp uses the Hyperverse to join and leave your favorite Tribes. With additional ability to display Team Schedule based on team selection
 						</p>
 						{flow?.loggedIn ? (
 							!currentTribe ? (
