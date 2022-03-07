@@ -2,13 +2,20 @@
 
 Bruce
 
-# tribes-eth
+# tribes-Flow
 
-`tribes-eth` is a sample [Next.js](https://nextjs.org/) project utilizing the tribes module from the [hyperverse](https://www.decentology.com/hyperverse). The aim of this project is to allow users to join different tribes (or communities) and gain access to content only visible to those in that specific tribe.
+We explored how to use the Hyperverse composable tooling that allows JavaScript developers to interact with the Blockchain easily. During our exploration, we had two primary goals. 
 
--   If you have any questions please join the [Decentology Discord.](http://discord.gg/decentology)
+To stand up an instance around our Volunteering Dapp, we could upload our Metadata.
+To read information from the Blockchain and interact with our backend database to display additional off-chain Metadata to the user. 
 
-## 💻 System Requirements
+Volunteer Dapp will develop a fundraising application that will allow users to join an organization. Using the Hyperverse Tribes module, we will display the selected organization team schedule. 
+
+# User Flow
+
+You will see the following site details once you follow the system installation requirements below. 
+
+# 💻 System Requirements
 
 -   [Visual Studio Code](https://code.visualstudio.com/download) (or any IDE for editing JavaScript)
 -   [Git](https://git-scm.com/)
@@ -47,25 +54,15 @@ If you were successful following the Installation application, you should be gre
 
 ### Prerequisities
 
-To be able to interact with the dapp, you need a Metmask Wallet and Rinkeby eth.
+To be able to interact with the dapp, you need to use a Blocto test account
 
-1. **Metamask**
+1. **FLOW Available Wallets**
 
-    If you do not have a metamask wallet, [here](https://www.surgewomen.io/learn-about-web3/set-up-metamask-wallet) is a guide you can follow on how to set up one.
-
-2. **Rinkeby Faucets**
-
-    To get some Rinkeby eth here are some available faucets you can request from:
-
--   https://faucet.paradigm.xyz/
--   https://app.mycrypto.com/faucet
-
-    Or ask us to send you some in our [Discord Server.](http://discord.gg/decentology)
+    When interacting with Flow Blockchain you will use Blocto's mobile wallet. The [FLow Docs](https://docs.onflow.org/flow-token/available-wallets/#blocto) to get more information on the signup process.
 
 ## 📌 Important Links and File Locations
 
 Here are some links and locations of files related to tribes:
 
--   Rinkeby Etherscan of the [contract](https://rinkeby.etherscan.io/address/0x410E22b393B3A90953c0677F2282E331580ed45b)
--   [Contract code](https://github.com/decentology/workshop-yeovil/blob/workshop/yeovil/packages/hyperverse-ethereum-tribes/contracts/Tribes.sol) found in the repo
--   [useTribe](https://github.com/decentology/workshop-yeovil/blob/workshop/yeovil/packages/hyperverse-ethereum-tribes/source/useTribes.ts) hook which is what allows us to interact and transact with the contract
+-   Origainl source code can be found at [Decentology Hyperverse Mono](https://github.com/decentology/hyperverse-mono)
+-   [Flow Smart Contract documentation](https://docs.onflow.org/)
